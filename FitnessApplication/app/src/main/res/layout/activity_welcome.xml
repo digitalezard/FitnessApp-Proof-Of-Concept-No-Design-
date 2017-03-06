@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.supinfo.fitnessapplication.WelcomeActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/ButtonWeightCurve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Curve" />
+
+            <Button
+                android:layout_alignParentLeft="true"
+                android:id="@+id/ButtonWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="0dp"
+                android:text="Weight" />
+
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/FootRace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Foot Race" />
+
+            <LinearLayout
+                android:id="@+id/layout_displayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ButtonWeight"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:labelFor="@+id/UNameDisplay"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Bonjour" />
+
+                <TextView
+
+                    android:id="@+id/UNameDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Johnny" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="110dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_displayName"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+
+                    android:labelFor="@+id/UAgeDisplay"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="Age:" />
+
+                <TextView
+                    android:id="@+id/UAgeDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_displayGender"
+                android:layout_marginTop="110dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_displayName"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:labelFor="@+id/UGenderDisplay"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sexe:" />
+
+                <TextView
+                    android:id="@+id/UGenderDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="110dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_displayName"
+                android:layout_alignParentRight="true">
+
+            <TextView
+                android:labelFor="@+id/UHeightDisplay"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="Taille:" />
+
+            <TextView
+                android:id="@+id/UHeightDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_marginTop="110dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_displayGender"
+                android:layout_centerHorizontal="true">
+
+            <TextView
+                android:labelFor="@+id/UWeightDisplay"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:text="Poid:" />
+
+            <TextView
+                android:id="@+id/UWeightDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_alignParentRight="true"
+                android:id="@+id/ButtonProfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="430dp"
+                android:layout_marginLeft="235dp"
+                android:text="Profil" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

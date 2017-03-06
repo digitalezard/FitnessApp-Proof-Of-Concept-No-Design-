@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.supinfo.fitnessapplication.ProfilActivity">
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:windowSoftInputMode="adjustResize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Profil" />
+
+            <TextView
+                android:layout_marginTop="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/ProfilUserNameArea"
+                android:text="UserName" />
+
+            <EditText
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="80dp"
+                android:id="@+id/ProfilUserNameArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/ProfilUserPwdArea"
+                android:text="Password" />
+
+            <EditText
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="80dp"
+                android:id="@+id/ProfilUserPwdArea"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"/>
+
+            <TextView
+                android:layout_marginTop="183dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/ProfilradioGender"
+                android:text="Gender" />
+
+            <RadioGroup
+                android:layout_marginTop="160dp"
+                android:layout_marginLeft="80dp"
+                android:id="@+id/ProfilradioGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/ProfilradioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/ProfilradioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="240dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/ProfilUserAgeArea"
+                android:text="Age" />
+
+            <EditText
+                android:layout_marginTop="230dp"
+                android:layout_marginLeft="80dp"
+                android:id="@+id/ProfilUserAgeArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="290dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/ProfilUserHeightArea"
+                android:text="Height" />
+
+            <EditText
+                android:layout_marginTop="280dp"
+                android:layout_marginLeft="80dp"
+                android:id="@+id/ProfilUserHeightArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="350dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/ProfilUserMailArea"
+                android:text="Email" />
+
+            <EditText
+                android:layout_marginTop="340dp"
+                android:layout_marginLeft="80dp"
+                android:id="@+id/ProfilUserMailArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_marginTop="430dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ButtonSendProfil"
+                android:onClick="onClick"
+                android:text="Send"
+                />
+            <Button
+                android:layout_marginTop="430dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ReturnProfil"
+                android:onClick="onClick"
+                android:text="Return" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
